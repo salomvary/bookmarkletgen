@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bookmarklet generator</title>
+	</head>
+	<body>
+		<form>
+			<p>
+				<label>
+					Title<br>
+					<input type="text" name="t" size="60" value="My First Bookmarklet"/>
+				</label>
+			<p>
+				<label>
+					Source<br>
+					<textarea name="s" rows="12" cols="60">var a = 'Hello World!';
+alert(a);</textarea>
+				</label>
+			</p>
+			<p>
+				<button name="by" type="button"><b>↓</b> Bookmarkify</button>
+				<button name="dby" type="button"><b>↑</b> Debookmarkify</button>
+			</p>
+			<p>
+				<label>
+					Bookmarklet<br/>
+					<textarea name="b" rows="12" cols="60">javascript:var%20a%20%3D%20'Hello%20World!'%3Balert(a)%3B</textarea>
+				</label>
+			</p>
+			<p>
+				Drag this to your bookmarks: <a id="a"></a>
+			</p>
+		</form>
+		<script src="https://raw.github.com/einars/js-beautify/master/beautify.js"></script>
+		<script src="bm.js"></script>
+	</body>
+</html>
+			
